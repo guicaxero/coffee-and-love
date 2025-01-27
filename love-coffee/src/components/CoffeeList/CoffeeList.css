@@ -1,0 +1,91 @@
+body {
+    background-color: #111315 ;  
+  }
+  
+  .container {
+      max-width: 80%;
+      margin: 0 auto;
+      border-radius: 2%;
+      background-color: #1B1D1F;
+  }
+  
+  .introduction {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "DM Sans", serif;
+      gap: 0.5rem; 
+  }
+  
+  .title {
+      color: #FEF7EE;
+      margin-bottom: 0.2rem;
+  }
+  
+  .text {
+      color: #4D5562;
+      text-align: justify;
+      max-width: 50%; 
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align-last: center;
+      margin: 0;
+  }
+  
+  
+  
+  .coffee-list {
+      display: flex;
+      justify-content: center;
+      gap: 3.5rem;
+      flex-wrap: wrap;
+  }
+  
+  .available-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+  }
+  
+  .available-buttons button {
+      font-family: "DM Sans", serif;
+      padding: 10px 20px;
+      border: 2px solid transparent;
+      background-color: transparent;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+  }
+  
+  .available-buttons button:hover {
+      color: #4CAF50; 
+  }
+  
+  .available-buttons button.active {
+      color: #4CAF50;
+      border-bottom: 2px solid #6F757C; 
+  }
+  
+  
+  @media (max-width: 768px) {
+      .container {
+          width: 85%;
+          margin: 1rem auto;
+      }
+      
+      .text {
+          max-width: 75%;
+          text-align: justify;
+      }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+      /* Estilos para tablets */
+  }
+  
+  
+  

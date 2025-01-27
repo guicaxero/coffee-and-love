@@ -1,0 +1,73 @@
+.card {
+    position: relative;
+}
+
+.coffee-img-wrapper {
+    display: inline-block; 
+}
+
+.coffee-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8%;
+}
+
+.coffee-pop {
+    font-family: "DM Sans", serif;
+    position: absolute;
+    top: -0.8rem;
+    left: 0.5rem; 
+    color: #111315; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    background-color: #F6C768;
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+}
+
+.coffee-name {
+    color: #FEF7EE;
+    display: inline-block; 
+    font-size: 1rem;
+    position:absolute;
+    left: 0;
+    bottom: 1.5rem;
+    font-family: "DM Sans", serif;
+}
+
+.coffee-price {
+    font-weight: 600;
+    display: inline-block; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #BEE3CC;
+    padding: 0.2rem 0.4rem;
+    border-radius: 8%;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+
+.rating-text {
+    color: #FEF7EE;
+    font-family: "DM Sans", serif;
+    font-weight: 400;
+}
+
+.rating-votes {
+    color: #6F757C;
+    font-family: "DM Sans", serif;
+    font-weight: 400;
+}
+
+.coffee-available {
+    color: #ED735D;
+    font-family: "DM Sans", serif;
+    font-weight: 400;
+}
