@@ -15,21 +15,24 @@ function Card({coffee}) {
                     <p className='coffee-pop'>Popular</p>
                 }
             </div>
-            <h3 className="coffee-name">{coffee.name}</h3>
-            <p className="coffee-price">{coffee.price}</p>
-            <div className='rating'>
-                {coffee.rating ? 
-                    <FaStar className='rating-icon' size={20} color='yellow' /> : 
-                    <CiStar className='rating-icon' size={20} color='white' />
-                }
-                <p className='rating-text' >{coffee.rating ? coffee.rating : <span className='rating-votes'>No ratings</span> }</p>
-                {coffee.rating && 
-                    <p className='rating-votes' >({coffee.votes} votes)</p>
+            <div className='info-card'>
+                <h3 className="coffee-name">{coffee.name}</h3>
+                <div className='rating'>
+                    {coffee.rating ? 
+                        <FaStar className='rating-icon' size={20} color='yellow' /> : 
+                        <CiStar className='rating-icon' size={20} color='white' />
+                    }
+                    <p className='rating-text' >{coffee.rating ? coffee.rating : <span className='rating-votes'>No ratings</span> }</p>
+                    {coffee.rating && 
+                        <p className='rating-votes' >({coffee.votes} votes)</p>
+                    }
+                    <p className="coffee-price">{coffee.price}</p>
+                </div>
+                { !coffee.available &&
+                    <p className='coffee-available'>Sold Out</p>
                 }
             </div>
-            { !coffee.available &&
-                <p className='coffee-available'>Sold Out</p>
-            }
+            
             {console.log(coffee)}
         </div>
 
